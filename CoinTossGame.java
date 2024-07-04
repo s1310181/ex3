@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class CoinTossGame {
 
@@ -6,7 +7,11 @@ public class CoinTossGame {
         Random random = new Random();
         int headsCount = 0;
         int tailsCount = 0;
-
+        System.out.println("Who are you?");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("> ");
+        String name = sc.next();
+        System.out.println("Hello, " + name + "!");
         System.out.println("Tossing a coin...");
 
         for (int round = 1; round <= 3; round++) {
